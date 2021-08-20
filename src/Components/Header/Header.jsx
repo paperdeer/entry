@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.scss';
 
 function Header() {
-    const [header,setHeader] = useState(70);
+    const [header,setHeader] = useState(102);
     useEffect(()=>{window.addEventListener('scroll',function(){
         const scroll = document.documentElement.scrollTop;
         console.log(scroll);

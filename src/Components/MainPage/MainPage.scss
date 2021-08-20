@@ -14,10 +14,12 @@
       //   width: 100px;
       //   height: 100px;
       position: absolute;
-      //   background-color: white;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 280px;
+      padding-bottom: 300px;
       .schoolName {
         font-size: 45px;
         font-weight: bold;
@@ -29,6 +31,23 @@
         font-weight: 600;
         font-family: "Nanum Gothic";
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      button {
+        font-size: 20px;
+        padding: 1.2rem 1.5rem;
+        border-radius: 0.3rem;
+        font-weight: bold;
+        font-family: "Nanum Gothic";
+        color: white;
+        border: none;
+        background-color: rgb(121, 194, 227);
+        text-align: center;
+        line-height: 1.5;
       }
     }
   }
