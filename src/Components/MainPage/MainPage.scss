@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.MainPage {
+  .img {
+    background-image: url("https://www.entrydsm.hs.kr/static/media/background.bdfcc931.png");
+    height: 750px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 70% center;
+    background-size: cover;
+    position: relative;
+    .divsInImg {
+      //   width: 100px;
+      //   height: 100px;
+      position: absolute;
+      //   background-color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .schoolName {
+        font-size: 45px;
+        font-weight: bold;
+        font-family: "Nanum Gothic";
+        margin-bottom: 10px;
+      }
+      .introduce {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: "Nanum Gothic";
+        text-align: center;
+      }
+    }
+  }
+}
