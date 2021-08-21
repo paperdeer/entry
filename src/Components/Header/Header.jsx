@@ -6,8 +6,8 @@ function Header() {
     useEffect(()=>{window.addEventListener('scroll',function(){
         const scroll = document.documentElement.scrollTop;
         console.log(scroll);
-        if(scroll >= 200) setHeader(40);
-        else setHeader(70);
+        if(scroll >= 250) setHeader(72);
+        else setHeader(102);
     })},[]);
   return (
     <nav className="header" style={{
