@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './MainPage.scss';
 import Entry from '../../assets/Entry.png'
-function MainPage() {
+function MainPage(props) {
+  const {refs} = props
+  const MainRef = useRef(null);
+  refs.mainRef = MainRef;
   return (
-    <section className="MainPage">
+    <section className="MainPage" ref={MainRef}>
       <div className="img">
         <div className="divsInImg">
           <div className="schoolName">
@@ -11,7 +14,7 @@ function MainPage() {
           </div>
           <div className="introduce">
             입학전형 시스템
-            <img src={Entry}/>
+            <img src={Entry} alt="Entry"/>
             입니다
           </div>
           <div>

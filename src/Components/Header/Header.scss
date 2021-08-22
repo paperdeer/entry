@@ -22,12 +22,18 @@
     display: flex;
 
     align-items: center;
-    .screenMoveButton {
+    .screenMoveButtons {
       width: 100%;
       display: flex;
       justify-content: center;
       li {
         margin-right: 5%;
+        display: flex;
+        .screenMoveButton {
+          border: none;
+          background-color: transparent;
+          font-size: 15px;
+        }
       }
     }
   }
