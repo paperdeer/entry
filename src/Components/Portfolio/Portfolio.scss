@@ -1,5 +1,91 @@
 .PortfolioPage {
   background-color: rgb(247, 249, 250);
+  .modalNone {
+    display: none;
+  }
+  .modalDIv {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+    outline: none;
+    animation: 0.8s ease 0s 1 normal none running bDlKuo;
+    .modal {
+      margin: 1rem;
+      .modalContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: white;
+        background-clip: padding-box;
+        border: 1px solid lightgray;
+        border-radius: 0.3rem;
+        outline: none;
+        padding: 100px 0;
+        .modalBody {
+          flex: 1 1 auto;
+          padding: 2rem;
+          .modalContainer {
+            .modalTop {
+              display: 1 1 auto;
+              //   flex-direction: column;
+              text-align: center;
+              flex-wrap: wrap;
+              align-items: center;
+              h2 {
+                font-size: 3rem;
+                margin-bottom: 15px;
+              }
+              .developType {
+                font-size: 16px;
+                margin-top: 16px;
+                line-height: 1.75;
+                margin-bottom: 30px;
+              }
+              img {
+                width: 60%;
+              }
+              .subInfo {
+                margin-top: 18px;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-family: "Nanum Gothic", sans-serif;
+                line-height: 1.75;
+              }
+              ul {
+                li {
+                  font-family: "Nanum Gothic", sans-serif;
+                  h5 {
+                    font-size: 18px;
+                    font-family: "Nanum Gothic", sans-serif;
+                  }
+                }
+              }
+              button {
+                font-family: "Nanum Gothic", sans-serif;
+                cursor: pointer;
+                color: white;
+                background-color: rgb(61, 255, 235);
+                border: none;
+                margin-top: 2em;
+                padding: 1em 2.4em;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 15px;
+                outline: none;
+                transition: all 0.5s ease 0s;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .Portfolio {
     padding: 160px 0;
     .PortfolioContainer {
@@ -33,9 +119,39 @@
         .contentsClick {
           display: block;
           background-color: white;
+          position: relative;
+          border: none;
           img {
             width: 100%;
             height: 100%;
+          }
+          .hoverPlus {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            opacity: 0;
+            transition: all 1s ease 0s;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            img {
+              display: flex;
+              width: 45px;
+              animation: 1s ease 0s 1 normal none running;
+            }
+          }
+          .hoverPlus:hover {
+            opacity: 1;
+          }
+        }
+        .contentsClick:hover {
+          cursor: pointer;
+          .modalmainImg {
+            opacity: 0.4;
           }
         }
         .contentsIfo {

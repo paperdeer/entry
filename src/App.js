@@ -15,6 +15,18 @@ function App() {
     TeamRef : '',
     QnARef : ''
   }
+  const [modal,setModal] = useState({
+    status : false,
+    title : '',
+    developType : '',
+    img : '',
+    subInfo : '',
+    developTeam : '',
+    developers : {
+        front : '',
+        back : ''
+    },
+});
   const onClickScreenMoveButton = (e) => {
     const onClickValue = e.target.value;
     console.log(e.target.value)
@@ -29,7 +41,7 @@ function App() {
       <Header onClickScreenMoveButton={onClickScreenMoveButton}/>
       <MainPage refs={refs}/>
       <Service refs={refs} />
-      <Portfolio refs={refs} />
+      <Portfolio refs={refs} setModal={setModal} modal={modal} />
       <About refs={refs}/>
       <Team refs={refs}/>
       <QnA refs={refs}/>
