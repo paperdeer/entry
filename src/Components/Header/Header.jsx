@@ -8,7 +8,7 @@ function Header(props) {
     useEffect(()=>{window.addEventListener('scroll',function(){
         const scroll = document.documentElement.scrollTop;
         console.log(scroll);
-        if(scroll >= 180) setHeader(72);
+        if(scroll >= 180) setHeader(62);
         else setHeader(102);
     })},[])
   return (

@@ -1,0 +1,58 @@
+.PortfolioPage {
+  background-color: rgb(247, 249, 250);
+  .Portfolio {
+    padding: 160px 0;
+    .PortfolioContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .PortfolioTop {
+        h2 {
+          font-family: "Nanum Gothic", sans-serif;
+          margin-bottom: 15px;
+          font-size: 45px;
+          text-align: center;
+        }
+        h3 {
+          font-family: "Nanum Gothic", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 75px;
+        }
+      }
+    }
+    .PortfolioBottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .PortfolioBottomContents {
+        padding: 0px 1rem;
+        width: 400px;
+        .contentsClick {
+          display: block;
+          background-color: white;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .contentsIfo {
+          padding: 1.5rem;
+          background-color: white;
+          text-align: center;
+          h4 {
+            font-family: "Nanum Gothic", sans-serif;
+            font-size: 22px;
+          }
+          p {
+            font-family: "Nanum Gothic", sans-serif;
+            font-size: 15px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
