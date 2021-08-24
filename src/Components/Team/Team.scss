@@ -1,0 +1,54 @@
+.TeamPage {
+  .TeamEntry {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Nanum Gothic", sans-serif;
+    line-height: 75px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .simpleIntroduce {
+    font-size: 18px;
+    font-family: "Nanum Gothic", sans-serif;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .EntryProfiles {
+    width: 1070px;
+    height: 1120px;
+    margin: 150px auto 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    .eachProfile {
+      .eachMemberContainer {
+        margin-right: 3.6vw;
+        .imgDiv {
+          border: 1px solid rgb(255, 238, 0);
+          width: 194px;
+          height: 194px;
+          border-radius: 50%;
+          position: relative;
+          img {
+            box-sizing: border-box;
+            width: 194px;
+            height: 194px;
+            border-radius: 50%;
+            padding: 7px;
+            top: 0px;
+            left: 0px;
+          }
+        }
+        .memberName {
+          font-size: 25px;
+          font-weight: bold;
+          font-family: NanumGothic, sans-serif;
+          margin-left: 68px;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}

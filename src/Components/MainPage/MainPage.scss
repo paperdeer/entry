@@ -24,7 +24,15 @@
         font-size: 45px;
         font-weight: bold;
         font-family: "Nanum Gothic", sans-serif;
-        margin-bottom: 10px;
+        margin-bottom: 23px;
+        position: relative;
+        margin-top: 38px;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
       .introduce {
         font-size: 60px;
