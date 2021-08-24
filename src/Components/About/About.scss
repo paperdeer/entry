@@ -1,0 +1,109 @@
+.aboutPage {
+  .aboutTop {
+    .about {
+      font-size: 45px;
+      font-weight: bold;
+      font-family: "Nanum Gothic", sans-serif;
+      line-height: 75px;
+      text-align: center;
+      padding-top: 110px;
+      letter-spacing: 10px;
+    }
+    .aboutEntry {
+      font-size: 18px;
+      font-family: "Nanum Gothic", sans-serif;
+      line-height: 35px;
+      text-align: center;
+    }
+    .marginbottom100 {
+      margin-bottom: 100px;
+    }
+  }
+  .entryLoadMap {
+    background-color: rgb(236, 243, 251);
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .entryLoadMapContainer {
+      width: 1080px;
+      .steps {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 62px;
+        width: 100%;
+        margin-bottom: 40px;
+        .firstStep {
+          padding-top: 100px;
+          margin-bottom: 62px;
+        }
+        .stepMarignTopBottom {
+          margin-top: 56px;
+          margin-bottom: 62px;
+        }
+        .stepMarginLeft {
+          margin-left: 40px;
+        }
+        div {
+          display: flex;
+          .introduceleft {
+            text-align: end;
+            display: flex;
+            align-items: flex-end;
+          }
+          .introduceEachStep {
+            width: 330px;
+            flex-direction: column;
+            .aboutEachYear {
+              font-size: 26px;
+              font-family: "Nanum Gothic", sans-serif;
+              font-weight: bold;
+              line-height: 30px;
+            }
+            .aboutEachTitle {
+              font-size: 25px;
+              font-family: NanumGothic, sans-serif;
+              font-weight: bold;
+              line-height: 30px;
+            }
+            .aboutEachContent {
+              font-size: 16px;
+              font-family: NanumGothic, sans-serif;
+              line-height: 27px;
+              width: 330px;
+            }
+            .thisYear {
+              font-size: 18px;
+              width: 270px;
+            }
+          }
+        }
+        .emptyContainer {
+          width: 330px;
+        }
+        .imgEachStep {
+          width: 181px;
+          height: 181px;
+          border-radius: 50%;
+          background-color: white;
+          border: 1px solid rgb(112, 112, 112);
+          margin: 0 75px;
+          box-sizing: border-box;
+          img {
+            padding: 7px;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .downArrow {
+          display: flex;
+          justify-content: center;
+          margin-right: 10px;
+          font-size: 20px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

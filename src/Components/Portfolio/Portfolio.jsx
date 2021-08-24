@@ -64,9 +64,7 @@ function Portfolio(props) {
         });
     }
   return (
-    <div className="PortfolioPage" ref={PortfolioRef}  style={{
-        height: '1000px'
-    }}>
+    <div className="PortfolioPage" ref={PortfolioRef}>
         <section className={modal.status ? "modalDIv" : "modalNone"}>
             <div className="modal">
                 <div className="modalContent">
