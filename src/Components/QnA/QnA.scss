@@ -9,4 +9,59 @@
     text-align: center;
     margin-bottom: 120px;
   }
+  .questionBox {
+    position: relative;
+    width: 1050px;
+    height: 90px;
+    font-size: 25px;
+    font-family: NanumGothic, sans-serif;
+    display: flex;
+    border: 1px solid rgb(112, 112, 112);
+    padding-left: 60px;
+    margin: 70px auto 0px;
+    cursor: pointer;
+    p {
+      margin-top: 30px;
+    }
+    .QnAArrow {
+      font-size: 25px;
+      position: absolute;
+      right: 60px;
+      top: 30px;
+      cursor: pointer;
+      transform: rotate(0deg);
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .answerBox {
+    width: 1050px;
+    height: 450px;
+    margin: 47px auto 69px;
+    border: 1px solid rgb(112, 112, 112);
+    padding: 53px 43px;
+    .QnAAnswerName {
+      font-size: 26px;
+      font-family: NanumGothic, sans-serif;
+      font-weight: bold;
+    }
+    .eachAnswer {
+      display: flex;
+      margin-top: 30px;
+      .answerFont {
+        font-size: 26px;
+        font-family: NanumGothic, sans-serif;
+        font-weight: bold;
+      }
+      p {
+        font-size: 22px;
+        font-weight: 300;
+        font-family: NanumGothic, sans-serif;
+        margin-left: 35px;
+      }
+    }
+  }
+}
+.none {
+  display: none;
 }
