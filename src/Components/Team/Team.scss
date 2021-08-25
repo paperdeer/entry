@@ -24,23 +24,79 @@
     flex-wrap: wrap;
     .eachProfile {
       .eachMemberContainer {
-        margin-right: 3.6vw;
+        margin-bottom: 41px;
+        margin-right: 3.53vw;
+        position: relative;
+        &:hover {
+          img {
+            opacity: 0.4;
+          }
+        }
+        .memberInfo:hover {
+          opacity: 1;
+        }
         .imgDiv {
-          border: 1px solid rgb(255, 238, 0);
-          width: 194px;
-          height: 194px;
           border-radius: 50%;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
             box-sizing: border-box;
             width: 194px;
             height: 194px;
             border-radius: 50%;
-            padding: 7px;
+            margin: 7px;
             top: 0px;
             left: 0px;
           }
         }
+        .grade3 {
+          border: 1px solid rgb(255, 238, 0);
+        }
+        .grade2 {
+          border: 1px solid rgb(112, 112, 112);
+        }
+        .grade1 {
+          border: 1px solid rgb(0, 21, 213);
+        }
+        .memberInfo {
+          opacity: 0;
+          width: 209px;
+          height: 209px;
+          z-index: 2;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          top: 0;
+          .memberType {
+            width: 100%;
+            text-align: center;
+            top: 70px;
+            font-family: NanumGothic, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          div {
+            bottom: 70px;
+            left: 70px;
+            font-size: 16px;
+            font-family: "NanumGothic", sans-serif;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+            a {
+              color: black;
+              outline: none;
+            }
+          }
+        }
+        // .memberInfo:hover {
+        //   opacity: 1;
+        // }
         .memberName {
           font-size: 25px;
           font-weight: bold;

@@ -6,10 +6,8 @@ function QnA(props) {
     const QnARef = useRef(null);
     refs.QnARef = QnARef;
   return (
-    <div ref={QnARef} style={{
-        height: '1000px'
-    }}>
-        QnA
+    <div ref={QnARef} className="QnAPage">
+        <div className="MEMBERQnA">MEMBER Q&A</div>
     </div>
   );
 }
