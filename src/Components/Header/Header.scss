@@ -20,7 +20,6 @@
     width: 70%;
     height: 100%;
     display: flex;
-
     align-items: center;
     .screenMoveButtons {
       width: 100%;
@@ -33,6 +32,9 @@
           border: none;
           background-color: transparent;
           font-size: 15px;
+          &:hover {
+            color: rgb(61, 255, 235);
+          }
         }
       }
     }

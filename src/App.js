@@ -6,6 +6,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import About from "./Components/About/About";
 import Team from "./Components/Team/Team";
 import QnA from "./Components/QnA/QnA";
+import Footer from "./Components/Footer/Footer";
 import { useEffect, useRef, useState } from "react";
 function App() {
   const refs = {
@@ -45,6 +46,7 @@ function App() {
       <About refs={refs}/>
       <Team refs={refs}/>
       <QnA refs={refs}/>
+      <Footer/>
     </div>
   );
 }
