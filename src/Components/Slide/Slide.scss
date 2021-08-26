@@ -1,0 +1,90 @@
+.Slide {
+  display: flex;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  margin-top: 276px;
+  .slideContainer {
+    border: 1px solid black;
+    display: flex;
+    .moveBtnToNext {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      background-color: transparent;
+      transform: translate(-50%, -50%);
+    }
+    .moveBtnToPrev {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 20px;
+      top: 50%;
+      font-weight: bold;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      transform: translate(-50%, -50%);
+    }
+    .eachSlideContainer {
+      width: 24.68vw;
+      height: 300px;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      border: 1px solid black;
+      display: flex;
+      .eachProfile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgInSlide {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 1px solid black;
+          background-color: white;
+          margin-top: 20px;
+          img {
+            width: 100%;
+            height: 100%;
+            padding: 7px;
+            border-radius: 50%;
+          }
+        }
+        .nameInSlide {
+          margin-top: 10px;
+          p {
+            font-size: 24px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            font-family: "Nanum Gothic", sans-serif;
+          }
+        }
+        .developTypeInSlide {
+          margin-top: 10px;
+          p {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Nanum Gothic", sans-serif;
+          }
+        }
+        .gradeInSlide {
+          margin-top: 10px;
+          p {
+            font-family: "Nanum Gothic", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

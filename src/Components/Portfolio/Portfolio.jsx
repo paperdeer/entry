@@ -46,9 +46,12 @@ function Portfolio(props) {
     }
     const onClickModalImg = (e) => {
         console.log("onClicked")
-        if(e.target.value == 0) setModal(firstObj);
-        else if(e.target.value == 1) setModal(secondObj);
-        else if(e.target.value == 2) setModal(thirdObj);
+        const value = e.target.value;
+        const plus = e.target.className;
+        console.log(plus);
+        if(value === '0' || plus === 'plus' ) setModal(firstObj);
+        else if(value === '1' || plus === 'plus' ) setModal(secondObj);
+        else if(value === '2' || plus === 'plus' ) setModal(thirdObj);
     }
     const onClickCloseModal = () => {
         setModal({status : false,
@@ -97,7 +100,7 @@ function Portfolio(props) {
                     <div className="PortfolioBottomContents">
                         <div className="contentsClick">
                             <img className="modalmainImg" src={EntryImg} alt="modal" />
-                            <button className="hoverPlus" onClick={onClickModalImg} value='0'><img src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>
+                            <button className="hoverPlus" onClick={onClickModalImg} value='0'><img className="plus" src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>
                         </div>
                         <div className="contentsIfo">
                             <h4>입학전형시스템</h4>
@@ -107,7 +110,7 @@ function Portfolio(props) {
                     <div className="PortfolioBottomContents">
                         <div  className="contentsClick">
                             <img className="modalmainImg" src={AdminImg} alt="modal" />
-                            <button  onClick={onClickModalImg} value="1" className="hoverPlus"><img src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>    
+                            <button  onClick={onClickModalImg} value="1" className="hoverPlus"><img className="plus" src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>    
                         </div>
                         <div className="contentsIfo">
                             <h4>입학전형시스템</h4>
@@ -117,7 +120,7 @@ function Portfolio(props) {
                     <div className="PortfolioBottomContents">
                         <div  className="contentsClick">
                             <img className="modalmainImg" src={QnAImg} alt="modal" />
-                            <button onClick={onClickModalImg} value="2" className="hoverPlus"><img src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>
+                            <button onClick={onClickModalImg} value="2" className="hoverPlus"><img className="plus" src="https://www.entrydsm.hs.kr/static/media/plus.9024901d.svg" alt="" /></button>
                         </div>
                         <div className="contentsIfo">
                             <h4>실시간 메신저</h4>

@@ -138,6 +138,9 @@
             border: none;
             outline: none;
             background-color: transparent;
+            &:hover {
+              cursor: pointer;
+            }
             img {
               display: flex;
               width: 45px;
