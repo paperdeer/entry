@@ -17,8 +17,8 @@ function MainPage(props) {
             <img src={Entry} alt="Entry"/>
             입니다
           </div>
-          <div>
-          <button>원서 접수하기</button>
+          <div className="submitBtn">
+          <a href="">원서 접수하기</a>
           </div>
         </div>
       </div>

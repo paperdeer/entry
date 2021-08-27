@@ -46,17 +46,21 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
-      button {
-        font-size: 20px;
-        padding: 1.2rem 1.5rem;
-        border-radius: 0.3rem;
-        font-weight: bold;
-        font-family: "Nanum Gothic", sans-serif;
-        color: white;
-        border: none;
-        background-color: rgb(121, 194, 227);
-        text-align: center;
-        line-height: 1.5;
+      .submitBtn {
+        margin-top: 20px;
+        a {
+          font-size: 20px;
+          padding: 1.2rem 1.5rem;
+          border-radius: 0.3rem;
+          font-weight: bold;
+          font-family: "Nanum Gothic", sans-serif;
+          color: white;
+          border: none;
+          background-color: rgb(121, 194, 227);
+          text-align: center;
+          line-height: 1.5;
+          // box-sizing: border-box;
+        }
       }
     }
   }

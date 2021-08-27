@@ -15,7 +15,7 @@ function Header(props) {
     <nav className="header"  style={{
         height:`${header}px`,
     }}>
-        <div className="header-logo"><img src="https://www.entrydsm.hs.kr/static/media/entry-headlogo.d3d1418d.svg" alt="" /></div>
+        <div className="header-logo"><a href=""><img src="https://www.entrydsm.hs.kr/static/media/entry-headlogo.d3d1418d.svg" alt="entry" /></a></div>
         <div className="header-options">
             <ul className="screenMoveButtons">
                 <li><button className="screenMoveButton" value="mainRef" onClick={onClickScreenMoveButton} id="main">WHAT IS ENTRYDSM</button></li>

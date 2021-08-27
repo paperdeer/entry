@@ -79,6 +79,9 @@
                 outline: none;
                 transition: all 0.5s ease 0s;
                 box-sizing: border-box;
+                &:hover {
+                  background-color: rgb(61, 230, 235);
+                }
               }
             }
           }
