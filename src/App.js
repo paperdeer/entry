@@ -17,7 +17,7 @@ import LYS from './assets/lys.jpg';
 import Male from './assets/Male.png';
 import SWJ from './assets/swj.jpg';
 import LWC from './assets/LWC.jpg';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 function App() {
   const memberArr = [
     {
@@ -117,15 +117,15 @@ function App() {
         develop : 'FRONT - END',
         github : 'https://github.com/Ghyeon1215',
         grade : '1'
+    },
+    {
+      name:'강석현',
+      img : Male,
+      develop : 'Front - End',
+      github : '',
+      grade : ''
     }
 ]
-  const refs = {
-    mainRef : '',
-    PortfolioRef : '',
-    AboutRef : '',
-    TeamRef : '',
-    QnARef : ''
-  }
   const [modal,setModal] = useState({
     status : false,
     title : '',
@@ -138,24 +138,15 @@ function App() {
         back : ''
     },
 });
-  const onClickScreenMoveButton = (e) => {
-    const onClickValue = e.target.value;
-    console.log(e.target.value)
-    if(onClickValue === 'mainRef') return refs.mainRef.current.scrollIntoView();
-    else if(onClickValue === 'PortfolioRef') return refs.PortfolioRef.current.scrollIntoView();
-    else if(onClickValue === 'AboutRef') return refs.AboutRef.current.scrollIntoView();
-    else if(onClickValue === 'TeamRef') return refs.TeamRef.current.scrollIntoView();
-    else if(onClickValue === 'QnARef') return refs.QnARef.current.scrollIntoView();
-  }
   return (
     <div className="App">
-      <Header onClickScreenMoveButton={onClickScreenMoveButton}/>
-      <MainPage refs={refs}/>
-      <Service refs={refs} />
-      <Portfolio refs={refs} setModal={setModal} modal={modal} />
-      <About refs={refs}/>
-      <Team refs={refs} memberArr={memberArr}/>
-      <QnA refs={refs}/>
+      <Header/>
+      <MainPage/>
+      <Service />
+      <Portfolio setModal={setModal} modal={modal} />
+      <About/>
+      <Team memberArr={memberArr}/>
+      <QnA/>
       <Slide memberArr={memberArr}/>
       <Footer/>
     </div>

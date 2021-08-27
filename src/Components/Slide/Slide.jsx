@@ -6,23 +6,24 @@ function Slide(props) {
     const [margin,setMargin] = useState(0);
     const [count ,setCount] = useState(0);
     const arrLength = memberArr.length;
+    const moveMargin = 24.68;
     const moveBtnToNext = () => {
         if(count > arrLength-5) {
             setMargin(0);
             setCount(0)
         }
         else {
-            setMargin(margin + 24.68);
+            setMargin(margin + moveMargin);
             setCount(count+1);
         }
     }
     console.log(margin);
     const moveBtnToPrev = () => {
         if(count <= 0){
-            setMargin(246.80000000000004);
+            setMargin(moveMargin*(arrLength-4));
             setCount(arrLength-5);
         } else {
-            setMargin(margin - 24.68);
+            setMargin(margin - moveMargin);
             setCount(count-1);
         }
     }

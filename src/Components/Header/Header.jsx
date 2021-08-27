@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import './Header.scss';
-function Header(props) {
-    const {onClickScreenMoveButton} = props;
+function Header() {
     const [header,setHeader] = useState(102);
     useEffect(()=>{window.addEventListener('scroll',function(){
         const scroll = document.documentElement.scrollTop;
@@ -18,11 +17,11 @@ function Header(props) {
         <div className="header-logo"><a href=""><img src="https://www.entrydsm.hs.kr/static/media/entry-headlogo.d3d1418d.svg" alt="entry" /></a></div>
         <div className="header-options">
             <ul className="screenMoveButtons">
-                <li><button className="screenMoveButton" value="mainRef" onClick={onClickScreenMoveButton} id="main">WHAT IS ENTRYDSM</button></li>
-                <li><button className="screenMoveButton" value="PortfolioRef" onClick={onClickScreenMoveButton} id="portfolio">PORTFOLIO</button></li>
-                <li><button className="screenMoveButton" value="AboutRef" onClick={onClickScreenMoveButton} id="">ABOUT</button></li>
-                <li><button className="screenMoveButton" value="TeamRef" onClick={onClickScreenMoveButton} id="">TEAM</button></li>
-                <li><button className="screenMoveButton" value="QnARef" onClick={onClickScreenMoveButton} id="">MEMBER Q&A</button></li>
+                <li><a className="screenMove" href="#MainPage"  id="main">WHAT IS ENTRYDSM</a></li>
+                <li><a className="screenMove" href="#PortfolioPage"  id="portfolio">PORTFOLIO</a></li>
+                <li><a className="screenMove" href="#AboutPage"  id="">ABOUT</a></li>
+                <li><a className="screenMove" href="#TeamPage"  id="">TEAM</a></li>
+                <li><a className="screenMove" href="#MemberQnAPage" id="">MEMBER Q&A</a></li>
             </ul>
         </div>
     </nav>

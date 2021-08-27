@@ -3,10 +3,8 @@ import './MainPage.scss';
 import Entry from '../../assets/Entry.png'
 function MainPage(props) {
   const {refs} = props
-  const MainRef = useRef(null);
-  refs.mainRef = MainRef;
   return (
-    <section className="MainPage" ref={MainRef}>
+    <section className="MainPage" id="MainPage">
       <div className="img">
         <div className="divsInImg">
           <div className="schoolName">

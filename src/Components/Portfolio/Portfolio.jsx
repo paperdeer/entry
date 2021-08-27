@@ -4,10 +4,7 @@ import EntryImg from '../../assets/EntryImg.png'
 import QnAImg from '../../assets/QnAImg.png'
 import AdminImg from '../../assets/AdminImg.png'
 function Portfolio(props) {
-    const {refs,setModal,modal} = props;
-    const PortfolioRef = useRef(null);
-    refs.PortfolioRef = PortfolioRef;
-    
+    const {setModal,modal} = props;
     const firstObj = {
         status : true,
         title : '입학전형시스템',
@@ -67,7 +64,7 @@ function Portfolio(props) {
         });
     }
   return (
-    <div className="PortfolioPage" ref={PortfolioRef}>
+    <div className="PortfolioPage" id="PortfolioPage">
         <section className={modal.status ? "modalDIv" : "modalNone"}>
             <div className="modal">
                 <div className="modalContent">

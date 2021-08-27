@@ -1,10 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './QnA.scss';
 
-function QnA(props) {
-    const {refs} = props;
-    const QnARef = useRef(null);
-    refs.QnARef = QnARef;
+function QnA() {
     const [arrow,setArrow] = useState({
         Q1Arrow : 0,
         Q1Arrowstatus : false,
@@ -226,7 +223,7 @@ function QnA(props) {
         }
     }
   return (
-    <div ref={QnARef} className="QnAPage">
+    <div className="QnAPage" id="MemberQnAPage">
         <div className="MEMBERQnA">MEMBER Q&A</div>
         {QnAArr.map((QnA) =>
         <div>

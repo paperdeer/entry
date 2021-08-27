@@ -5,12 +5,9 @@ import img2017 from '../../assets/2017.jpg'
 import img2018 from '../../assets/2018.jpg'
 import img2019 from '../../assets/2019.jpg'
 import img2020 from '../../assets/2020.jpg'
-function About(props) {
-    const {refs} = props;
-    const AboutRef = useRef(null);
-    refs.AboutRef = AboutRef;
+function About() {
   return (
-    <div ref={AboutRef} className="aboutPage">
+    <div id="AboutPage" className="aboutPage">
         <section className="aboutTop">
             <p className="about">ABOUT</p>
             <p className="aboutEntry">약 5년 간 서비스를 제공해온 노하우를 바탕으로</p>

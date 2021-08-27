@@ -2,13 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import './Team.scss';
 
 function Team(props) {
-    const {refs,memberArr} = props;
-    const TeamRef = useRef(null);
-    refs.TeamRef = TeamRef;
+    const {memberArr} = props;
     
     console.log(memberArr);
   return (
-    <div ref={TeamRef}className="TeamPage">
+    <div id="TeamPage" className="TeamPage">
         <div className="TeamEntry">TEAM ENTRY</div>
         <div className="simpleIntroduce">EntryDSM의 발전과 새로운 이야기를 만드는 사람들 입니다.</div>
         <div className="EntryProfiles">
