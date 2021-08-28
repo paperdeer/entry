@@ -1,5 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
 import './Slide.scss';
+
+let intervalstatus = null;
 
 function Slide(props) {
     const {memberArr} = props;
@@ -7,18 +9,17 @@ function Slide(props) {
     const [count ,setCount] = useState(0);
     const arrLength = memberArr.length;
     const moveMargin = 24.68;
-    const moveBtnToNext = () => {
+    const moveBtnToNext = useCallback(() => {
         if(count > arrLength-5) {
             setMargin(0);
             setCount(0)
-        }
-        else {
+        } else {
             setMargin(margin + moveMargin);
-            setCount(count+1);
+            setCount(count + 1);
         }
-    }
-    console.log(margin);
-    const moveBtnToPrev = () => {
+    }, [setMargin, setCount, count])
+
+    const moveBtnToPrev = useCallback(() => {
         if(count <= 0){
             setMargin(moveMargin*(arrLength-4));
             setCount(arrLength-5);
@@ -26,11 +27,16 @@ function Slide(props) {
             setMargin(margin - moveMargin);
             setCount(count-1);
         }
-    }
-    console.log(margin);
-    // useEffect(()=>(
-    //     setInterval(moveBtnToNext,5000)
-    // ),[count])
+    }, [setCount, setMargin, count]);
+
+    useEffect(() => {
+        if (intervalstatus) {
+            clearInterval(intervalstatus);
+        }
+
+        intervalstatus = setInterval(moveBtnToNext, 2000);
+    }, [moveBtnToNext]);
+
   return (
       <div>
         <div className="Slide">
